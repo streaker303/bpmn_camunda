@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "label": "告警名称",
+      "type": "text",
+      "value": "reportName"
+    },
+    {
+      "item": [
+        {
+          "value": "低",
+          "key": "0"
+        },
+        {
+          "value": "中低",
+          "key": "1"
+        },
+        {
+          "value": "中",
+          "key": "2"
+        },
+        {
+          "value": "中高",
+          "key": "3"
+        },
+        {
+          "value": "高",
+          "key": "4"
+        }
+      ],
+      "label": "告警等级",
+      "type": "select",
+      "value": "reportLevel"
+    },
+    {
+      "item": [
+        {
+          "value": "成功",
+          "key": "成功"
+        },
+        {
+          "value": "失陷",
+          "key": "失陷"
+        },
+        {
+          "value": "企图",
+          "key": "企图"
+        },
+        {
+          "value": "平局",
+          "key": "平局"
+        }
+      ],
+      "label": "攻击结果",
+      "type": "select",
+      "value": "attackResult"
+    },
+    {
+      "item": [
+        {
+          "value": "待确认",
+          "key": "0"
+        },
+        {
+          "value": "已确认",
+          "key": "1"
+        },
+        {
+          "value": "已处理",
+          "key": "2"
+        },
+        {
+          "value": "已驳回",
+          "key": "3"
+        }
+      ],
+      "label": "告警状态",
+      "type": "select",
+      "value": "reportStatus"
+    },
+    {
+      "item": [
+        {
+          "value": "否",
+          "key": "0"
+        },
+        {
+          "value": "是",
+          "key": "1"
+        }
+      ],
+      "label": "审核状态",
+      "type": "select",
+      "value": "checkStatus"
+    },
+    {
+      "item": [
+        {
+          "value": "否",
+          "key": "0"
+        },
+        {
+          "value": "是",
+          "key": "1"
+        }
+      ],
+      "label": "是否封禁",
+      "type": "select",
+      "value": "isBanned"
+    },
+    {
+      "label": "分析过程",
+      "type": "text",
+      "value": "analyzePro"
+    },
+    {
+      "label": "处置建议",
+      "type": "text",
+      "value": "disposalAdvise"
+    },
+    {
+      "item": [
+        {
+          "value": "否",
+          "key": "0"
+        },
+        {
+          "value": "是",
+          "key": "1"
+        }
+      ],
+      "label": "是否溯源",
+      "type": "select",
+      "value": "isTrace"
+    },
+    {
+      "label": "溯源结果",
+      "type": "text",
+      "value": "traceResult"
+    },
+    {
+      "label": "追加建议",
+      "type": "text",
+      "value": "appendProposal"
+    }
+  ],
+  "code": 1,
+  "message": "success"
+}
