@@ -1,0 +1,1 @@
+webpackJsonp([15],{"ww2/":function(e,a){e.exports={data:[{label:"漏洞名称",value:"leakName"},{label:"漏洞类型",value:"type"},{label:"漏洞级别",value:"level"}],code:1,message:"success"}}});

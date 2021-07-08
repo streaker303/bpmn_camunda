@@ -166,37 +166,22 @@ export const get_menu = (data) => {
 }
 // 告警字段
 export const get_selested_all_fileds = (data) => {
-	return axios.request({
-		url: 'http://localhost:8094/static/json/alarmField.json',
-		method: 'get',
-		params: data.queryData,
-		data: data.paramsData,
-	}).then(result => {
+	return import('../../static/json/alarmField.json').then(result => {
 		console.log(result)
-		return getAjax(result);
+		return result.data;
 	})
 }
 export const get_condition = (data) => {
-	return axios.request({
-		url: 'http://localhost:8094/static/json/condition.json',
-		method: 'get',
-		params: data.queryData,
-		data: data.paramsData,
-	}).then(result => {
+	return import('../../static/json/condition.json').then(result => {
 		console.log(result)
-		return getAjax(result);
+		return result.data;
 	})
 }
 //获取工单字段
 export const get_work_fileds = (data) => {
-    return axios.request({
-        url: 'http://localhost:8094/static/json/workOrder.json',
-        method: 'get',
-        params: data.queryData,
-        data: data.paramsData,
-    }).then(result => {
+    return import('../../static/json/workOrder.json').then(result => {
         console.log(result)
-        return getAjax(result);
+        return result.data;
     })
 }
 //获取工单任务详情
@@ -213,14 +198,9 @@ export const get_workTask_detail = (data) => {
 }
 //获取漏洞字段
 export const get_leak_fileds = (data) => {
-    return axios.request({
-        url: 'http://localhost:8094/static/json/leakField.json',
-        method: 'get',
-        params: data.queryData,
-        data: data.paramsData,
-    }).then(result => {
+    return import('../../static/json/leakField.json').then(result => {
         console.log(result)
-        return getAjax(result);
+        return result.data;
     })
 }
 

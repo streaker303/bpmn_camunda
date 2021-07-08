@@ -17,16 +17,16 @@ export let axios_config = () => {
 function getCookie(name) {
     var prefix = name + "="
     var start = document.cookie.indexOf(prefix)
- 
+
     if (start == -1) {
         return null;
     }
- 
+
     var end = document.cookie.indexOf(";", start + prefix.length)
     if (end == -1) {
         end = document.cookie.length;
     }
- 
+
     var value = document.cookie.substring(start + prefix.length, end)
     return unescape(value);
 }
@@ -148,46 +148,30 @@ export const deleteWorkObject= (data) => {
 }
 // 获取所有人
 export const getAllUsers= (data) => {
-    return axios.request({
-        url: 'http://localhost:8094/static/json/users.json',
-        method: 'get',
-        data: data,
-    }).then(result => {
+    return import('../../static/json/users.json').then(result => {
         console.log(result);
-        return getAjax(result);
+        return result.data;
     })
 }
 // 获取所有部门
 export const getAllDep= (data) => {
-    return axios.request({
-        url: 'http://localhost:8094/static/json/dep.json',
-        method: 'get',
-        data: data,
-    }).then(result => {
+    return import('../../static/json/dep.json').then(result => {
         console.log(result);
-        return getAjax(result);
+        return result.data;
     })
 }
 // 获取所有角色
 export const getAllRoles= (data) => {
-    return axios.request({
-        url: 'http://localhost:8094/static/json/userRole.json',
-        method: 'get',
-        data: data,
-    }).then(result => {
+    return import('../../static/json/userRole.json').then(result => {
         console.log(result);
-        return getAjax(result);
+        return result.data;
     })
 }
 // 获取工单发起对象
 export const getSendObject= (data) => {
-    return axios.request({
-        url: 'http://localhost:8094/static/json/sendObject.json',
-        method: 'get',
-        data: data,
-    }).then(result => {
+    return import('../../static/json/sendObject.json').then(result => {
         console.log(result);
-        return getAjax(result);
+        return result.data;
     })
 }
 // 获取工单模板列表

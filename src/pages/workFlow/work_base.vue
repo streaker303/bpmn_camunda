@@ -195,7 +195,7 @@ import {
                     UEDITOR_HOME_URL: 'static/ueditor/'
                 },
                 count: 0,
-                
+
 				loading: false, //右侧整体loading
                 formLabelWidth: '120px',
 				tableData: [],
@@ -343,7 +343,7 @@ import {
                 }
                 (str[str.length-1] === '、') && (str=str.slice(0,str.length-1))
                 return str;
-                
+
             },
             show_warn_user () {
                 let str='';
@@ -371,7 +371,7 @@ import {
             },
             show_warn_mes () {
                 return this.formData.endEventObj.mes;
-                
+
             },
 		},
 		methods: {
@@ -475,7 +475,7 @@ import {
             handleFinishWarn() {
 		        let title = this.$refs.field.$refs['editHead'].innerHTML;
 		        let mes = this.$refs.field.$refs['editBody'].innerHTML;
-                
+
                 if (title.trim() === '' || mes.trim()==='') {
                     this.mesFlag = true;
                     return ;
@@ -505,7 +505,7 @@ import {
                 this.warnForm.mes = this.formData.endEventObj.mes;
                 this.warnForm.title = this.formData.endEventObj.title;
                 this.record_endWarnList = this.$deepCopy(this.endWarnList);
-		        
+
             },
             cancelFinish () {
                 this.finishWarnDialog = false;
@@ -727,7 +727,7 @@ import {
 			color: #fff;
 		}
 		.tips {
-			font-size: 12px;				
+			font-size: 12px;
 			letter-spacing: 0px;
 			color: #ffffff;
 			opacity: 0.8;
@@ -762,7 +762,7 @@ import {
         margin-top: 10px;
         margin-left: 0px;
         cursor: pointer;
-    
+
         i {
             margin-right: 4px;
         }
@@ -774,7 +774,7 @@ import {
         margin-left: 60px;
         margin-bottom: 40px;
         cursor: pointer;
-        
+
         i {
             margin-right: 4px;
         }
@@ -792,7 +792,7 @@ import {
         margin-top: 10px;
         width: 30px;
         height: 100%;
-        
+
     }
     .single-condition >>> .el-divider {
         background-color: rgba(28,215,250,.2);
@@ -810,11 +810,11 @@ import {
         width: 640px;
         background: rgba(0,0,0,.2);
         border-radius: 2px;
-        
+
         & p {
             font-size: 12px;
             margin: 5px 0;
-            
+
             &.warn-top {
                 color: #fff;
                 opacity: .6;
@@ -824,7 +824,7 @@ import {
                 word-break: break-all;
             }
         }
-        
+
     }
     .attendance-dialog .red-star {
         position: relative;
